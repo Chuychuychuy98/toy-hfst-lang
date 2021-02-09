@@ -1,0 +1,108 @@
+LEXICON Pre-N
+ @P.POSS.1SG@@U.PTYPE.II@:@P.POSS.1SG@@U.PTYPE.II@s%{ai%}       N ;
+ @P.POSS.1SG@@U.PTYPE.III@:@P.POSS.1SG@@U.PTYPE.III@a%{mN%}     N ;
+ @P.POSS.2SG@@U.PTYPE.II@:@P.POSS.2SG@@U.PTYPE.II@chi           N ;
+ @P.POSS.2SG@@U.PTYPE.III@:@P.POSS.2SG@@U.PTYPE.III@chi%{mN%}   N ;
+ @P.POSS.1PL@@U.PTYPE.II@:@P.POSS.1PL@@U.PTYPE.II@pi            N ;
+ @P.POSS.1PL@@U.PTYPE.III@:@P.POSS.1PL@@U.PTYPE.III@pi%{mN%}    N ;
+ @P.POSS.2PL@@U.PTYPE.II@:@P.POSS.2PL@@U.PTYPE.II@hachi         N ;
+ @P.POSS.2PL@@U.PTYPE.III@:@P.POSS.2PL@@U.PTYPE.III@hachi%{mN%} N ; ! I'm not certain this one's correct
+ @P.POSS.3@@U.PTYPE.II@                                         N ; ! this form is null
+ @P.POSS.3@@U.PTYPE.III@:@P.POSS.3@@U.PTYPE.III@                N ;
+ ! There may also be another distinction in the 1pl-- hapi(m)--not sure what it means
+ ! Possibly paucal (pi) vs. plural (hapi)
+
+LEXICON N
+ ani'     N-II-npreq  ;
+ ahi'     N-III-npreq ;
+ nakfish  N-II-preq   ;
+ oNshi    N-III-preq  ;
+ aalak    N-III-preq  ; ! sister's husband
+ aalakosi N-III-preq  ; ! wife's brother
+ anni'    N-III-preq  ; ! older brother (of a man), older sister (of a woman)
+ hokni'   N-III-preq  ; ! paternal aunt
+ kanoomi' N-III-npreq ; ! kinsman, relative
+ ki'      N-III-preq  ; ! father
+
+LEXICON N-II-preq
+ @U.PTYPE.II@@R.PREQ.T@+N:@U.PTYPE.II@@R.PREQ.T@ N-dem ;
+ @U.PTYPE.II@@R.PREQ.T@+N:@U.PTYPE.II@@R.PREQ.T@ N-dem-clausal ;
+
+LEXICON N-II-npreq
+ @U.PTYPE.II@@R.PREQ.F@+N:@U.PTYPE.II@@R.PREQ.F@ N-dem ;
+ @U.PTYPE.II@@R.PREQ.F@+N:@U.PTYPE.II@@R.PREQ.F@ N-dem-clausal ;
+
+LEXICON N-III-preq
+ @U.PTYPE.III@@R.PREQ.T@+N:@U.PTYPE.III@@R.PREQ.T@ N-dem ;
+ @U.PTYPE.III@@R.PREQ.T@+N:@U.PTYPE.III@@R.PREQ.T@ N-dem-clausal ;
+
+LEXICON N-III-npreq
+ @U.PTYPE.III@@R.PREQ.F@+N:@U.PTYPE.III@@R.PREQ.F@ N-dem ;
+ @U.PTYPE.III@@R.PREQ.F@+N:@U.PTYPE.III@@R.PREQ.F@ N-dem-clausal ;
+
+LEXICON N-poss
+ @R.POSS.1SG@+Poss+1Sg:@R.POSS.1SG@ # ;
+ @R.POSS.2SG@+Poss+2Sg:@R.POSS.2SG@ # ;
+ @R.POSS.1PL@+Poss+1Pl:@R.POSS.1PL@ # ;
+ @R.POSS.2PL@+Poss+2Pl:@R.POSS.2PL@ # ;
+ @R.POSS.3@+Poss+3:@R.POSS.3@ # ;
+ @D.POSS@ #;
+
+LEXICON N-case
+ +Nom:^%{nom%}               N-poss ;
+ +Acc:^%{acc%}               N-poss ;
+ @D.REQC@+Acc:@D.REQC@      N-poss ; ! Sometimes accusative is unmarked
+ @D.REQC@:@D.REQC@          N-poss ; ! Sometimes no case is marked
+ @D.REQC@+Nom2:@D.REQC@^ato N-poss ; ! +focus
+ @D.REQC@+Acc2:@D.REQC@^ano N-poss ;
+ @D.REQC@+Too:@D.REQC@^kia  N-poss ; ! = also, to, replaces case marker, also means "every" on kaNna and naNna, "but" on verbs (TODO) 
+
+LEXICON N-dem-clausal
+ @U.DEM.THAT@+That:@U.DEM.THAT@^m%{a%}%{k%} N-det-clausal ; ! Can appear twice
+ @U.DEM.THIS@+This:@U.DEM.THIS@^p%{a%}%{k%} N-det-clausal ; ! Can appear twice
+ @P.DEM.OBL@+Obl:@P.DEM.OBL@^ak           N-det-clausal ;
+ N-det-clausal ;
+
+LEXICON N-dem
+ @U.DEM.THAT@+That:@U.DEM.THAT@^m%{a%}%{k%} N-det ;
+ @U.DEM.THIS@+This:@U.DEM.THIS@^p%{a%}%{k%} N-det ;
+ N-det ;
+
+LEXICON N-det
+ @D.DEM.OBL@+Obl:@D.DEM.OBL@^ak           N-det2 ;
+ +Pej:^akhii        N-det2 ;
+ +Compar:^ook       N-pej  ;
+ +Only:^ba          N-det2 ;
+ +Too2:^makoo       N-det2 ;
+ +Too2:^ohmakoo     N-det2 ; ! equivalent to makoo
+ N-det2 ;
+
+LEXICON N-pej
+ +Pej:^akhii N-det2 ;
+ N-det2 ;
+
+LEXICON N-det-clausal
+ +Must:^polla       N-comp  ; ! must or because
+ +Emph:^akiNli      N-tpart ;
+ +Very:^fiihna      N-tpart ; ! very or exactly
+ +Very:^fiihna      N-comp  ;
+ +Only2:^baano      N-tpart ;
+ +Prev:^aash        N-prev  ; ! previously mentioned, relatives, not marked for case unless with participial ending
+
+LEXICON N-comp
+ @P.REQC.T@+Comp+Con:@P.REQC.T@^ka^akoo N-case ;
+ @P.REQC.T@+Comp:@P.REQC.T@^ka          N-case ; ! less frequent
+
+LEXICON N-tpart
+ +Tns+Part:^h^oo N-case ;
+ +Tns:^h         # ; ! maybe less frequent?
+
+LEXICON N-prev
+ +Nom:^oosh # ;
+ +Acc:^oN   # ;
+ # ;
+
+LEXICON N-det2
+ +Con:^akoo N-case ;
+ +Foc:^oo   N-case ;
+ N-case ;

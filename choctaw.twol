@@ -1,0 +1,12 @@
+Alphabet
+
+a aa aN b ch f h i ii iN k l lh m n o oo oN p s sh t w y '
+
+%^:0
+
+;
+
+Rules
+
+"Delete glottal stop before suffix"
+  ':0 <=> _ %^: ;
