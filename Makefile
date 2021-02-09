@@ -60,6 +60,3 @@ strings.txt : choctaw_gen.hfst
 
 stringsnosc.txt : 
 	hfst-fst2strings -X obey-flags choctaw_gen_nosc.hfst > strings.txt
-
-
-
