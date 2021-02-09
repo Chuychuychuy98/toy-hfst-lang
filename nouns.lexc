@@ -1,14 +1,14 @@
 LEXICON Pre-N
- @P.POSS.1SG@@U.PTYPE.II@:@P.POSS.1SG@@U.PTYPE.II@s%{ai%}       N ;
- @P.POSS.1SG@@U.PTYPE.III@:@P.POSS.1SG@@U.PTYPE.III@a%{mN%}     N ;
- @P.POSS.2SG@@U.PTYPE.II@:@P.POSS.2SG@@U.PTYPE.II@chi           N ;
- @P.POSS.2SG@@U.PTYPE.III@:@P.POSS.2SG@@U.PTYPE.III@chi%{mN%}   N ;
- @P.POSS.1PL@@U.PTYPE.II@:@P.POSS.1PL@@U.PTYPE.II@pi            N ;
- @P.POSS.1PL@@U.PTYPE.III@:@P.POSS.1PL@@U.PTYPE.III@pi%{mN%}    N ;
- @P.POSS.2PL@@U.PTYPE.II@:@P.POSS.2PL@@U.PTYPE.II@hachi         N ;
- @P.POSS.2PL@@U.PTYPE.III@:@P.POSS.2PL@@U.PTYPE.III@hachi%{mN%} N ; ! I'm not certain this one's correct
- @P.POSS.3@@U.PTYPE.II@                                         N ; ! this form is null
- @P.POSS.3@@U.PTYPE.III@:@P.POSS.3@@U.PTYPE.III@                N ;
+ @U.POSS.1SG@@U.PTYPE.II@:@U.POSS.1SG@@U.PTYPE.II@s%{ai%}       N ;
+ @U.POSS.1SG@@U.PTYPE.III@:@U.POSS.1SG@@U.PTYPE.III@a%{mN%}     N ;
+ @U.POSS.2SG@@U.PTYPE.II@:@U.POSS.2SG@@U.PTYPE.II@chi           N ;
+ @U.POSS.2SG@@U.PTYPE.III@:@U.POSS.2SG@@U.PTYPE.III@chi%{mN%}   N ;
+ @U.POSS.1PL@@U.PTYPE.II@:@U.POSS.1PL@@U.PTYPE.II@pi            N ;
+ @U.POSS.1PL@@U.PTYPE.III@:@U.POSS.1PL@@U.PTYPE.III@pi%{mN%}    N ;
+ @U.POSS.2PL@@U.PTYPE.II@:@U.POSS.2PL@@U.PTYPE.II@hachi         N ;
+ @U.POSS.2PL@@U.PTYPE.III@:@U.POSS.2PL@@U.PTYPE.III@hachi%{mN%} N ; ! I'm not certain this one's correct
+ @U.POSS.3@@U.PTYPE.II@                                         N ; ! this form is null
+ @U.POSS.3@@U.PTYPE.III@:@U.POSS.3@@U.PTYPE.III@                N ;
  ! There may also be another distinction in the 1pl-- hapi(m)--not sure what it means
  ! Possibly paucal (pi) vs. plural (hapi)
 
@@ -25,27 +25,27 @@ LEXICON N
  ki'      N-III-preq  ; ! father
 
 LEXICON N-II-preq
- @U.PTYPE.II@@R.PREQ.T@+N:@U.PTYPE.II@@R.PREQ.T@ N-dem ;
- @U.PTYPE.II@@R.PREQ.T@+N:@U.PTYPE.II@@R.PREQ.T@ N-dem-clausal ;
+ @U.PTYPE.II@@U.PREQ.T@+N:@U.PTYPE.II@@U.PREQ.T@ N-dem ;
+ @U.PTYPE.II@@U.PREQ.T@+N:@U.PTYPE.II@@U.PREQ.T@ N-dem-clausal ;
 
 LEXICON N-II-npreq
- @U.PTYPE.II@@R.PREQ.F@+N:@U.PTYPE.II@@R.PREQ.F@ N-dem ;
- @U.PTYPE.II@@R.PREQ.F@+N:@U.PTYPE.II@@R.PREQ.F@ N-dem-clausal ;
+ @U.PTYPE.II@@U.PREQ.F@+N:@U.PTYPE.II@@U.PREQ.F@ N-dem ;
+ @U.PTYPE.II@@U.PREQ.F@+N:@U.PTYPE.II@@U.PREQ.F@ N-dem-clausal ;
 
 LEXICON N-III-preq
- @U.PTYPE.III@@R.PREQ.T@+N:@U.PTYPE.III@@R.PREQ.T@ N-dem ;
- @U.PTYPE.III@@R.PREQ.T@+N:@U.PTYPE.III@@R.PREQ.T@ N-dem-clausal ;
+ @U.PTYPE.III@@U.PREQ.T@+N:@U.PTYPE.III@@U.PREQ.T@ N-dem ;
+ @U.PTYPE.III@@U.PREQ.T@+N:@U.PTYPE.III@@U.PREQ.T@ N-dem-clausal ;
 
 LEXICON N-III-npreq
- @U.PTYPE.III@@R.PREQ.F@+N:@U.PTYPE.III@@R.PREQ.F@ N-dem ;
- @U.PTYPE.III@@R.PREQ.F@+N:@U.PTYPE.III@@R.PREQ.F@ N-dem-clausal ;
+ @U.PTYPE.III@@U.PREQ.F@+N:@U.PTYPE.III@@U.PREQ.F@ N-dem ;
+ @U.PTYPE.III@@U.PREQ.F@+N:@U.PTYPE.III@@U.PREQ.F@ N-dem-clausal ;
 
 LEXICON N-poss
- @R.POSS.1SG@+Poss+1Sg:@R.POSS.1SG@ # ;
- @R.POSS.2SG@+Poss+2Sg:@R.POSS.2SG@ # ;
- @R.POSS.1PL@+Poss+1Pl:@R.POSS.1PL@ # ;
- @R.POSS.2PL@+Poss+2Pl:@R.POSS.2PL@ # ;
- @R.POSS.3@+Poss+3:@R.POSS.3@ # ;
+ @U.POSS.1SG@+Poss+1Sg:@U.POSS.1SG@ # ;
+ @U.POSS.2SG@+Poss+2Sg:@U.POSS.2SG@ # ;
+ @U.POSS.1PL@+Poss+1Pl:@U.POSS.1PL@ # ;
+ @U.POSS.2PL@+Poss+2Pl:@U.POSS.2PL@ # ;
+ @U.POSS.3@+Poss+3:@U.POSS.3@ # ;
  @D.POSS@ #;
 
 LEXICON N-case

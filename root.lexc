@@ -24,24 +24,26 @@ oo
 
 @U.CAUS.T@ @D.CAUS@
 
-@P.POSS.1SG@ @R.POSS.1SG@
-@P.POSS.2SG@ @R.POSS.2SG@
-@P.POSS.1PL@ @R.POSS.1PL@ ! Possessed by whom?
-@P.POSS.2PL@ @R.POSS.2PL@
-@P.POSS.3@ @R.POSS.3@
+! NOUNS
+@U.POSS.1SG@
+@U.POSS.2SG@
+@U.POSS.1PL@ ! Possessed by whom?
+@U.POSS.2PL@
+@U.POSS.3@
 @D.POSS@ ! Unpossessed
 
 @U.PTYPE.II@ ! Type of possession
 @U.PTYPE.III@
 
-@P.PREQ.T@ @R.PREQ.T@
-@P.PREQ.F@ @R.PREQ.F@
+@U.PREQ.T@
+@U.PREQ.F@
 
 @U.DEM.THIS@ @U.DEM.THAT@ ! ensures that if demonstrative appears twice, they match
 @P.DEM.OBL@ @D.DEM.OBL@ ! Ensures that oblique doesn't get added twice
 
 @P.REQC.T@ @D.REQC@ ! Ensures that participles take a proper case
 
+! VERBS
 @U.ARG.I-III@
 @U.ARG.I-II@
 @U.ARG.II-II@
@@ -65,9 +67,9 @@ oo
 %{acc%}
 
 LEXICON Root
- @P.PREQ.T@ Pre-N ;
- @P.PREQ.F@ Pre-N ;
- @P.PREQ.F@ N ;
+ @U.PREQ.T@ Pre-N ;
+ @U.PREQ.F@ Pre-N ;
+ @U.PREQ.F@ N ;
  @U.ARG.I-II@     V-I ;
  @U.ARG.I-III@    V-I ;
  @U.ARG.II-II@    V-II  ;
