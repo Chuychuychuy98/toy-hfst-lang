@@ -56,7 +56,7 @@ test :
 	sh tests.sh  # sh is a command to run the argument filename as a shell script (usually bash)
 
 strings.txt : choctaw_gen.hfst
-	hfst-fst2strings -X obey-flags choctaw_gen.hfst > strings.txt
+	hfst-fst2strings -c 2 -X obey-flags choctaw_gen.hfst > strings.txt
 
 stringsnosc.txt : 
-	hfst-fst2strings -X obey-flags choctaw_gen_nosc.hfst > strings.txt
+	hfst-fst2strings -c 2 -X obey-flags choctaw_gen_nosc.hfst > strings.txt
